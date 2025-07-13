@@ -8,22 +8,36 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/cosmic-background.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0b0f1a"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aavaskc.soulsyncapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
+    "devDependencies": {
+      "@react-native-community/cli": "latest"
+    },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0b0f1a"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7957c130-bdad-46f8-a3d7-311992059c0e"
+      }
+    },
+    "plugins": ["expo-asset"]
   }
 }
